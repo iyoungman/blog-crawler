@@ -1,5 +1,3 @@
-
-
 class Response:
 
     def __init__(self, blog, title, link, contents):

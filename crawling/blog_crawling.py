@@ -19,7 +19,6 @@ def crawling():
 
         rcv_data = get_request_url(blog_type, blog)
         soup_data = BeautifulSoup(rcv_data, 'html.parser')
-        # all_data = soup_data.find('item')
 
         for index_data in soup_data.find_all("item"):
             put_data = index_data.find("pubdate").text
@@ -42,7 +41,7 @@ def get_request_url(blog_type, blog_url, enc='utf-8'):
         splits = blog_url.split('.')
         splits.insert(1, "rss.")
         blog_url = blog_url + "".join(splits)
-    else: # 티스토리
+    else:  # 티스토리
         blog_url = blog_url + "/rss"
 
     req = urllib.request.Request(blog_url)

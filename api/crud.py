@@ -10,28 +10,12 @@ def show_all_infos():
     db_session.close()
 
 
-# def get_all_infos_dict():
-#     queries = db_session.query(Info)
-#
-#     infos_dic = {}
-#     for q in queries:
-#         if q.email in infos_dic:  # 존재하면
-#             infos_dic[q.email].append(q)
-#         else:
-#             value_list = []
-#             value_list.append(q)
-#             infos_dic[q.email] = value_list
-#
-#     print(infos_dic)
-#     db_session.close()
-#     return infos_dic
-
 def get_all_infos_dict():
     queries = db_session.query(Info)
 
     infos_model = []
     for q in queries:
-       infos_model.append(q)
+        infos_model.append(q)
 
     db_session.close()
     return infos_model
