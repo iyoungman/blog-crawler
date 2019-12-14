@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Blog Crawler</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript">
+        function oneCheckbox(a) {
+            var obj = document.getElementsByName("blogType");
+            for (var i = 0; i < obj.length; i++) {
+                if (obj[i] != a) {
+                    obj[i].checked = false;
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+<form action="http://127.0.0.1:5000" method="POST">
+    <h2>이메일을 추가해주세요.</h2>
+    <input type="text" name="email" style="width:300px;height:22px;font-size:15px;">
+    <br><br>
+
+    <h2>블로그 정보도 추가해주세요</h2>
+    <input type="text" name="blog" placeholder = "블로그의 루트 페이지 URL을 입력해주세요" style="width:300px;height:22px;font-size:15px;">
+    <br>
+    <input type="checkbox" name="blogType" value="네이버" checked onclick="oneCheckbox(this)">네이버
+    <input type="checkbox" name="blogType" value="티스토리" onclick="oneCheckbox(this)">티스토리
+    <br><br>
+
+    <input type="submit" value="제출하기" style="width:300px;height:50px;font-size:15px;background-color:#FFFF00;">
+</form>
+
+</body>
+</html>
