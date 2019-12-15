@@ -22,18 +22,22 @@ def crawling():
 
         for index_data in soup_data.find_all("item"):
             put_data = index_data.find("pubdate").text
-            str_put_data = parse(put_data).strftime('%Y-%m-%d')
+            dt_put_data = parse(put_data).date()
+            # str_put_data = parse(put_data).strftime('%Y-%m-%d')
+            sub_date = (dt_put_data - get_yesterday()).days
 
-            if not str_put_data == get_yesterday():  # Sat, 14 Dec 2019 23:43:56 +0900
+            if not sub_date >= 0:  # Sat, 14 Dec 2019 23:43:56 +0900
                 break
-            title = index_data.find("title")
-            link = index_data.find("link")
+            title = index_data.find("title").text
+            link = index_data.find("guid").text
             if email in result_dict:  # 존재하면
                 result_dict[email].append(Response(blog, title, link, None))
             else:
                 dto_list = []
                 dto_list.append(Response(blog, title, link, None))
                 result_dict[email] = dto_list
+
+    print("END")
 
 
 def get_request_url(blog_type, blog_url, enc='utf-8'):
@@ -61,7 +65,8 @@ def get_request_url(blog_type, blog_url, enc='utf-8'):
 
 
 def get_yesterday():
-    yesterday = date.today() - timedelta(20)
+    BEFORE_DAY = 20
+    yesterday = date.today() - timedelta(BEFORE_DAY)
     return yesterday
 
 
