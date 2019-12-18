@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String
-from api.database import Base
+from api.database_create import Base
 
 
 class Info(Base):
-    __tablename__ = 'infos'
+    __tablename__ = 'infos'  # 저장할 테이블 이름
     id = Column(Integer, primary_key=True)
     email = Column(String(50))
     blog = Column(String(100))

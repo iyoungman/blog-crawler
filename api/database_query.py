@@ -1,6 +1,6 @@
-from api.database import init_db
-from api.database import db_session
-from api.models import Info
+from api.database_create import init_db
+from api.database_create import db_session
+from api.database_model import Info
 
 
 def show_all_infos():
@@ -19,6 +19,17 @@ def get_all_infos_dict():
 
     db_session.close()
     return infos_model
+
+
+def get_blog_by_email(confirm_email):
+    queries = db_session.query(Info).filter(Info.email.like(confirm_email))
+    info_list = queries.all()
+
+    str_blog_list = []
+    for info in info_list:
+        str_blog_list.append(info.blog)
+
+    return ' , '.join(str_blog_list)
 
 
 def print(infos_dic):

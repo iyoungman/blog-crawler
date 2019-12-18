@@ -1,0 +1,52 @@
+https://imiyoungman.tistory.com
+[Spring] @Transactional의 이해
+https://imiyoungman.tistory.com/9
+
+https://jojoldu.tistory.com
+Github 패스워드 교체시 로컬 비밀번호도 변경하기
+https://jojoldu.tistory.com/467
+
+https://jojoldu.tistory.com
+Mac의 클립보드 명령어 - pbcopy & pbpaste
+https://jojoldu.tistory.com/466
+
+https://jojoldu.tistory.com
+인텔리제이에 파이썬 인터프리터 설정하기
+https://jojoldu.tistory.com/465
+
+https://jojoldu.tistory.com
+일일커밋 3주년 회고
+https://jojoldu.tistory.com/464
+
+https://jojoldu.tistory.com
+[스프링 부트와 AWS로 혼자 구현하는 웹 서비스] 출간 후기
+https://jojoldu.tistory.com/463
+
+https://blog.naver.com/nackji80
+CiscoJuniperNokia의 주요 MPLSVPN 명령어 모음
+https://blog.naver.com/nackji80/221738479400
+
+https://blog.naver.com/nackji80
+[여행 첫째 날] 프라하가는 비행기에서부터 싸웠음 (2019613)
+https://blog.naver.com/nackji80/221733115938
+
+https://blog.naver.com/nackji80
+얘들아~ 중년 형이 말할게 인스타그램 B612 사진은 믿고 거르자
+https://blog.naver.com/nackji80/221729465282
+
+https://blog.naver.com/nackji80
+현서가 고추를 발견했어요~!!
+https://blog.naver.com/nackji80/221724231198
+
+https://blog.naver.com/nackji80
+매달 아내 계좌로 입금되는 금액
+https://blog.naver.com/nackji80/221723725587
+
+https://blog.naver.com/nackji80
+[네이트 판] 아내가 아파트 요가 수업을 못 다니게 해요
+https://blog.naver.com/nackji80/221722688307
+
+https://blog.naver.com/nackji80
+난 영어 공부하는 것이 너무 재미있는데, 왜 영어를 이렇게 못할까
+https://blog.naver.com/nackji80/221721610548
+
